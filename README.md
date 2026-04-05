@@ -9,4 +9,4 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000/portfolio](http://localhost:3000/portfolio).
+Open [http://localhost:3000/](http://localhost:3000/).
