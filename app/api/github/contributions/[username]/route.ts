@@ -111,7 +111,7 @@ export async function GET(_: Request, context: RouteContext) {
     }
 
     const payload = (await response.json()) as GitHubGraphqlResponse;
-    console.log(payload.data?.user?.contributionsCollection.contributionCalendar);
+    
     if (payload.errors?.length) {
       return jsonWithCache(fallbackPayload(username, payload.errors[0]?.message ?? "GitHub API error."), 502);
     }
