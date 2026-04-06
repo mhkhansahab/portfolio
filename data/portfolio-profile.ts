@@ -241,8 +241,8 @@ export const portfolioProfile: PortfolioProfile = {
   contact_pitch:
     "Share your workflow bottleneck and I will map a practical execution plan in our first call.",
   quote: {
-    text: "Committed to technical excellence, mentorship, and high-impact solutions.",
-    author: "Muhammad Hamza Khan",
+    text: "Simplicity is prerequisite for reliability.",
+    author: "Edsger W. Dijkstra",
   },
   theme: {
     colors: {
