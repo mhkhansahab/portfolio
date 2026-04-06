@@ -93,7 +93,7 @@ export const portfolioProfile: PortfolioProfile = {
       description:
         "Contributed to ICPlan's internal communications platform during my time at IOMechs, focusing on frontend delivery, UX quality, and production-grade web implementation.",
       href: "https://icplan.com/",
-      image: "/assets/projects/icplan-home-hero.webp",
+      image: "/assets/projects/icplan-hero.webp",
       tech: ["Angular.js", "TypeScript", "RxJS", "NgRX"],
     },
     {
