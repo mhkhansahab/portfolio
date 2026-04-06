@@ -118,8 +118,8 @@ export const portfolioProfile: PortfolioProfile = {
     href: "https://calendly.com/hamza-khansahab/30min",
   },
   quote: {
-    text: "Committed to technical excellence, mentorship, and high-impact solutions.",
-    author: "Muhammad Hamza Khan",
+    text: "Make it work, make it right, make it fast.",
+    author: "Kent Beck",
   },
   theme: {
     colors: {
