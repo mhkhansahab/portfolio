@@ -89,20 +89,28 @@ export const portfolioProfile: PortfolioProfile = {
   ],
   projects: [
     {
-      title: "Project 1 (Update Me)",
+      title: "ICPlan (IOMechs)",
       description:
-        "Replace this card with your real project details (title, impact, stack, and link).",
-      href: "https://github.com/mhkhansahab",
-      image: "/assets/projects/project-1.jpg",
-      tech: ["React.js", "Next.js", "TypeScript"],
+        "Contributed to ICPlan's internal communications platform during my time at IOMechs, focusing on frontend delivery, UX quality, and production-grade web implementation.",
+      href: "https://icplan.com/",
+      image: "/assets/projects/icplan-home-hero.webp",
+      tech: ["Angular.js", "TypeScript", "RxJS", "NgRX"],
     },
     {
-      title: "Project 2 (Update Me)",
+      title: "SmythOS",
       description:
-        "Replace this card with another real project from your work or portfolio.",
-      href: "https://github.com/mhkhansahab",
-      image: "/assets/projects/project-2.jpg",
-      tech: ["Node.js", "PostgreSQL", "Frontend"],
+        "Worked on SmythOS enterprise AI agent infrastructure, including agent builder experience, multimodal interactions, and secure deployment-oriented product features.",
+      href: "https://smythos.com/",
+      image: "/assets/projects/smythos-hero.jpg",
+      tech: ["Vanilla JavaScript", "Next.js", "TypeScript", "Node.js", "Zustand", "AI Agents", "Security"],
+    },
+    {
+      title: "SNAD (IOMechs)",
+      description:
+        "Contributed to SNAD's retail-focused IMS and POS platform at IOMechs, helping deliver responsive frontend experience and production-ready web interfaces.",
+      href: "https://snad.csolit.com/",
+      image: "/assets/projects/snad-hero.svg",
+      tech: ["Angular.js", "TypeScript", "RxJS", "NgRX"],
     },
   ],
   meeting_link: {

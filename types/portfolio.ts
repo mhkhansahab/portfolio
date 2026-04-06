@@ -42,6 +42,31 @@ export type BlogItem = {
   tags: string[];
 };
 
+export type GitHubContributionLevel =
+  | "NONE"
+  | "FIRST_QUARTILE"
+  | "SECOND_QUARTILE"
+  | "THIRD_QUARTILE"
+  | "FOURTH_QUARTILE";
+
+export type GitHubContributionDay = {
+  date: string;
+  contributionCount: number;
+  contributionLevel: GitHubContributionLevel;
+};
+
+export type GitHubContributionWeek = {
+  contributionDays: GitHubContributionDay[];
+};
+
+export type GitHubContributionsResponse = {
+  username: string;
+  weeks: GitHubContributionWeek[];
+  totalContributions: number;
+  fetchedAt: string;
+  error?: string;
+};
+
 export type PortfolioProfile = {
   template: string;
   img: string;
