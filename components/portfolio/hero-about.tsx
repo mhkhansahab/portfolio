@@ -5,7 +5,7 @@ import { TechBadge } from "@/components/portfolio/tech-badge";
 import type { PortfolioProfile } from "@/types/portfolio";
 
 export function HeroAbout({ profile }: { profile: PortfolioProfile }) {
-  const heroParagraphs = [profile.desc_1, profile.desc_2, profile.desc_3].filter((value) => value?.trim().length);
+  const heroParagraphs = [profile.desc_1].filter((value) => value?.trim().length);
   const primarySkills = profile.tech_stack.filter((item) => item.tier !== "secondary");
   const secondarySkills = profile.tech_stack.filter((item) => item.tier === "secondary");
 
@@ -44,7 +44,7 @@ export function HeroAbout({ profile }: { profile: PortfolioProfile }) {
       {primarySkills.length === 0 && (
         <div className="mt-6 flex flex-wrap gap-2">
           {profile.tech_stack.map((item) => (
-          <TechBadge key={item.visibleName} item={item} />
+            <TechBadge key={item.visibleName} item={item} />
           ))}
         </div>
       )}
