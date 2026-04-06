@@ -5,9 +5,14 @@ export const portfolioProfile: PortfolioProfile = {
   img: "/assets/profile/avatar-2.svg",
   img_alt: "Profile photo",
   heading_bold: "Hamza",
-  heading_light: "A Full Stack Engineer.",
+  heading_light: "I build AI automations that save teams real hours every week.",
   desc_1:
-    "Full Stack Engineer specializing in AI Agents, Chrome Extensions, and scalable web applications. I focus on architecting functional solutions to complex problems and building robust, production-ready systems.",
+    "I help SMB service businesses automate repetitive operations, improve response time, and ship client-facing web apps faster.",
+  desc_2:
+    "My core offer is a 2-week AI Automation Sprint focused on practical workflow wins your team can use immediately.",
+  desc_3:
+    "From AI agent orchestration to production web implementation, I deliver systems that are reliable, maintainable, and built for business outcomes.",
+  trust_companies: ["SmythOS", "IOMechs", "ICPlan", "SNAD"],
   tech_stack: [
     { iconName: "SI Typescript", visibleName: "TypeScript", tier: "primary" },
     { iconName: "SI React", visibleName: "React", tier: "primary" },
@@ -25,13 +30,13 @@ export const portfolioProfile: PortfolioProfile = {
   cta_buttons: [
     {
       type: "primary",
-      label: "Resume / CV",
-      href: "https://canva.link/hamza-khan-resume",
+      label: "Book Discovery Call",
+      href: "https://calendly.com/hamza-khansahab/30min",
       icon: "LU FileText",
     },
     {
       type: "secondary",
-      label: "Get in touch",
+      label: "Email me",
       href: "mailto:m_hamzakhan@outlook.com",
       icon: "BI Send",
     },
@@ -48,6 +53,104 @@ export const portfolioProfile: PortfolioProfile = {
       href: "https://github.com/mhkhansahab",
     },
     { type: "BI Envelope", label: "Email", href: "mailto:m_hamzakhan@outlook.com" },
+  ],
+  services: [
+    {
+      title: "AI Automation Sprint",
+      timeline: "2 weeks",
+      ideal_for: "SMB teams with repetitive manual workflows in sales, support, or operations.",
+      deliverables: [
+        "Workflow audit and automation map",
+        "1-2 production AI automations shipped",
+        "Handoff docs + async walkthrough",
+      ],
+      pricing_text: "Fixed-scope quote",
+      cta_label: "Book Discovery Call",
+      cta_href: "https://calendly.com/hamza-khansahab/30min",
+      recommended: true,
+    },
+    {
+      title: "Custom AI Agent Build",
+      timeline: "4-6 weeks",
+      ideal_for: "Businesses needing bespoke AI agents integrated with internal tools and APIs.",
+      deliverables: [
+        "Agent architecture and implementation",
+        "Tool integration and guardrails",
+        "Monitoring, prompt tuning, and support plan",
+      ],
+      pricing_text: "Starting from project-based scope",
+      cta_label: "Discuss Build Scope",
+      cta_href: "https://calendly.com/hamza-khansahab/30min",
+    },
+    {
+      title: "Web App + AI Integration",
+      timeline: "4-8 weeks",
+      ideal_for: "Teams launching or modernizing a product with AI-assisted workflows.",
+      deliverables: [
+        "Frontend + backend delivery",
+        "AI-assisted feature integration",
+        "Deployment-ready implementation",
+      ],
+      pricing_text: "Starting from project-based scope",
+      cta_label: "Plan My Project",
+      cta_href: "https://calendly.com/hamza-khansahab/30min",
+    },
+  ],
+  process_steps: [
+    {
+      title: "Discovery",
+      description: "We map your bottlenecks, define priority workflows, and lock success criteria.",
+    },
+    {
+      title: "Build",
+      description: "I implement the agreed scope with transparent updates and milestone demos.",
+    },
+    {
+      title: "Deploy",
+      description: "You get production-ready rollout with testing, safeguards, and documentation.",
+    },
+    {
+      title: "Support",
+      description: "Post-launch refinements, optimization, and iteration based on real usage.",
+    },
+  ],
+  faqs: [
+    {
+      question: "How fast can we start?",
+      answer: "Most engagements start within 3-7 days after a discovery call and scope sign-off.",
+    },
+    {
+      question: "How do you communicate during projects?",
+      answer: "I provide async updates, milestone demos, and a clear weekly execution summary.",
+    },
+    {
+      question: "Do you offer maintenance after delivery?",
+      answer: "Yes. I offer post-launch support windows and optional ongoing optimization retainers.",
+    },
+    {
+      question: "How do you handle security and sensitive data in automations?",
+      answer: "I use scoped access, least-privilege integrations, and explicit data-flow boundaries in every build.",
+    },
+  ],
+  testimonials: [
+    {
+      quote:
+        "I had the pleasure of working with Hamza and his dedication to excellence is truly admirable. His front-end expertise is exceptional, and his ability to collaborate across teams has been invaluable. He is positive, supportive, and consistently goes above and beyond for the team.",
+      name: "Muhammad Ahmer Hussain",
+      role: "Senior SQA",
+    },
+    {
+      quote:
+        "Hamza is an absolute rockstar front-end developer. His JavaScript and React.js expertise is top-notch, and he is a fantastic team player who is always open to feedback and collaboration. You can count on him to deliver high-quality work every time.",
+      name: "Rechelle Ann Fuertes, CSSGB",
+      role: "Head of Marketing",
+    },
+    {
+      quote:
+        "I had the privilege of working with Hamza for over a year. He is proactive, responsible, and technically sound, always ready to put in the effort to get the job done. His troubleshooting and analytical skills in JavaScript-related technologies are exceptional.",
+      name: "Aahad Aazar",
+      role: "AI & Product Engineer",
+    },
   ],
   experience: [
     {
@@ -91,15 +194,27 @@ export const portfolioProfile: PortfolioProfile = {
     {
       title: "ICPlan (IOMechs)",
       description:
-        "Contributed to ICPlan's internal communications platform during my time at IOMechs, focusing on frontend delivery, UX quality, and production-grade web implementation.",
+        "Contributed to ICPlan's internal communications platform with a focus on frontend delivery and production quality.",
+      business_problem:
+        "Teams needed a scalable internal communications platform that stayed usable while product complexity grew.",
+      solution:
+        "Built and refined core frontend flows, improved UI consistency, and supported stable delivery across evolving requirements.",
+      result:
+        "Improved implementation velocity and reduced delivery friction for ongoing feature releases.",
       href: "https://icplan.com/",
-      image: "/assets/projects/icplan-home-hero.webp",
+      image: "/assets/projects/icplan-hero.webp",
       tech: ["Angular.js", "TypeScript", "RxJS", "NgRX"],
     },
     {
       title: "SmythOS",
       description:
-        "Worked on SmythOS enterprise AI agent infrastructure, including agent builder experience, multimodal interactions, and secure deployment-oriented product features.",
+        "Worked on enterprise AI agent infrastructure and agent-builder product experience.",
+      business_problem:
+        "Teams needed reliable agent orchestration and secure deployment workflows for production AI automation.",
+      solution:
+        "Implemented agent builder workflows, multimodal interaction modules, and security-oriented product features.",
+      result:
+        "Helped ship production-ready AI capabilities with stronger reliability and safer deployment behavior.",
       href: "https://smythos.com/",
       image: "/assets/projects/smythos-hero.jpg",
       tech: ["Vanilla JavaScript", "Next.js", "TypeScript", "Node.js", "Zustand", "AI Agents", "Security"],
@@ -107,16 +222,24 @@ export const portfolioProfile: PortfolioProfile = {
     {
       title: "SNAD (IOMechs)",
       description:
-        "Contributed to SNAD's retail-focused IMS and POS platform at IOMechs, helping deliver responsive frontend experience and production-ready web interfaces.",
+        "Contributed to SNAD's retail IMS/POS platform with a focus on responsive, production-ready interfaces.",
+      business_problem:
+        "Retail teams needed a unified IMS/POS experience that reduced day-to-day operational overhead.",
+      solution:
+        "Delivered frontend modules and interface improvements to support smoother inventory, POS, and operational workflows.",
+      result:
+        "Enabled a more reliable operator experience and faster day-to-day task completion across product flows.",
       href: "https://snad.csolit.com/",
       image: "/assets/projects/snad-hero.svg",
       tech: ["Angular.js", "TypeScript", "RxJS", "NgRX"],
     },
   ],
   meeting_link: {
-    label: "Book a Meeting",
+    label: "Book Discovery Call",
     href: "https://calendly.com/hamza-khansahab/30min",
   },
+  contact_pitch:
+    "Share your workflow bottleneck and I will map a practical execution plan in our first call.",
   quote: {
     text: "Committed to technical excellence, mentorship, and high-impact solutions.",
     author: "Muhammad Hamza Khan",

@@ -1,12 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
 import { PlusIcon } from "@/components/portfolio/icons";
 
-export function ContactCTA({ label, href, imageUrl, imageAlt }: { label: string; href: string; imageUrl: string; imageAlt: string }) {
+export function ContactCTA({
+  label,
+  href,
+  imageUrl,
+  imageAlt,
+  pitch,
+}: {
+  label: string;
+  href: string;
+  imageUrl: string;
+  imageAlt: string;
+  pitch: string;
+}) {
   return (
     <section id="contact" className="mt-20">
       <div className="rounded-md border border-dashed border-black/20 py-8 dark:border-border/70 dark:bg-card/45">
         <div className="mt-6 flex w-full flex-col px-6 pb-8 sm:flex-row sm:items-center sm:justify-between sm:px-12">
-          <p className="text-sleek-secondary mb-4 text-center text-base sm:mb-3 md:text-xl">Let&apos;s connect and discuss opportunities.</p>
+          <p className="text-sleek-secondary mb-4 text-center text-base sm:mb-3 md:text-xl">{pitch}</p>
           <div className="mt-4 flex w-full justify-center sm:mt-0 sm:w-auto sm:justify-end">
             <a
               href={href}

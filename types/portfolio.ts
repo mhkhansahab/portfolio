@@ -29,6 +29,9 @@ export type ExperienceItem = {
 export type ProjectItem = {
   title: string;
   description: string;
+  business_problem: string;
+  solution: string;
+  result: string;
   href: string;
   image: string;
   tech: string[];
@@ -74,13 +77,40 @@ export type PortfolioProfile = {
   heading_bold: string;
   heading_light: string;
   desc_1: string;
+  desc_2: string;
+  desc_3: string;
   tech_stack: TechStackItem[];
+  trust_companies: string[];
 
   cta_buttons: CtaButton[];
   social_links: SocialLink[];
+  services: Array<{
+    title: string;
+    timeline: string;
+    ideal_for: string;
+    deliverables: string[];
+    pricing_text: string;
+    cta_label: string;
+    cta_href: string;
+    recommended?: boolean;
+  }>;
+  process_steps: Array<{
+    title: string;
+    description: string;
+  }>;
+  faqs: Array<{
+    question: string;
+    answer: string;
+  }>;
+  testimonials?: Array<{
+    quote: string;
+    name: string;
+    role: string;
+  }>;
   experience: ExperienceItem[];
   projects: ProjectItem[];
   meeting_link: { label: string; href: string };
+  contact_pitch: string;
   quote: { text: string; author: string };
   theme: {
     colors: {

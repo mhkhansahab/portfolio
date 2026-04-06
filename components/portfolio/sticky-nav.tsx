@@ -3,8 +3,10 @@ import { ThemeToggle } from "@/components/portfolio/theme-toggle";
 
 const LINKS = [
   { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
+  { href: "#services", label: "Services" },
   { href: "#projects", label: "Projects" },
+  { href: "#process", label: "Process" },
+  { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
 ];
 

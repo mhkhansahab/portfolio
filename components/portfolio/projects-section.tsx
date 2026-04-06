@@ -11,7 +11,16 @@ function ProjectCard({ project }: { project: ProjectItem }) {
         <h3 className="mt-4 text-lg font-semibold text-foreground [font-family:var(--profile-heading-font)] group-hover:text-primary group-hover:underline">
           {project.title}
         </h3>
-        <p className="text-sleek-secondary mt-1 line-clamp-3 text-sm">{project.description}</p>
+        <p className="text-sleek-secondary mt-1 text-sm">{project.description}</p>
+        <p className="text-sleek-secondary mt-2 text-xs">
+          <span className="font-semibold text-foreground">Problem:</span> {project.business_problem}
+        </p>
+        <p className="text-sleek-secondary mt-1 text-xs">
+          <span className="font-semibold text-foreground">Built:</span> {project.solution}
+        </p>
+        <p className="mt-1 text-xs font-semibold text-foreground">
+          Results: {project.result}
+        </p>
         <div className="mt-2 flex flex-wrap items-center gap-2">
           {project.tech.map((tag) => (
             <span key={tag} className="tag-inner-shadow rounded-md border border-dashed border-black/20 bg-black/[0.04] px-2 py-0.5 text-xs text-foreground dark:border-border/85 dark:bg-accent/45">
