@@ -105,9 +105,9 @@ export const portfolioProfile: PortfolioProfile = {
       tech: ["Vanilla JavaScript", "Next.js", "TypeScript", "Node.js", "Zustand", "AI Agents", "Security"],
     },
     {
-      title: "SNAD (IOMechs)",
+      title: "AZM (IOMechs)",
       description:
-        "Contributed to SNAD's retail-focused IMS and POS platform at IOMechs, helping deliver responsive frontend experience and production-ready web interfaces.",
+        "Contributed to AZM's retail-focused IMS and POS platform at IOMechs, helping deliver responsive frontend experience and production-ready web interfaces.",
       href: "https://snad.csolit.com/",
       image: "/assets/projects/snad-hero.svg",
       tech: ["Angular.js", "TypeScript", "RxJS", "NgRX"],

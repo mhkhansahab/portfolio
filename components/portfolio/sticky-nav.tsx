@@ -10,7 +10,7 @@ const LINKS = [
 
 export function StickyNav({ imageUrl, imageAlt }: { imageUrl: string; imageAlt: string }) {
   return (
-    <nav className="sleek-p3 sticky top-0 z-20 rounded-md bg-background/35 py-4 backdrop-blur-sm dark:bg-background/55">
+    <nav className="sleek-p3 sm:sticky top-0 z-20 rounded-md bg-background/35 py-4 backdrop-blur-sm dark:bg-background/55">
       <div className="container mx-auto flex max-w-3xl items-center justify-between px-6">
         <div className="flex flex-wrap items-baseline gap-2 sm:gap-4">
           <a className="flex shrink-0 items-center" href="#top">
