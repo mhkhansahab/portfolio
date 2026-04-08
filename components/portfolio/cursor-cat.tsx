@@ -80,7 +80,7 @@ export function CursorCat() {
 
       const accel = 0.03;
       const damping = 0.84;
-      const maxSpeed = 3;
+      const maxSpeed = 2;
 
       vx += dx * accel;
       vy += dy * accel;

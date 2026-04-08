@@ -12,7 +12,7 @@ export const portfolioProfile: PortfolioProfile = {
     "My core offer is a 2-week AI Automation Sprint focused on practical workflow wins your team can use immediately.",
   desc_3:
     "From AI agent orchestration to production web implementation, I deliver systems that are reliable, maintainable, and built for business outcomes.",
-  trust_companies: ["SmythOS", "IOMechs", "ICPlan", "SNAD"],
+  trust_companies: ["SmythOS", "IOMechs", "ICPlan", "AZM"],
   tech_stack: [
     { iconName: "SI Typescript", visibleName: "TypeScript", tier: "primary" },
     { iconName: "SI React", visibleName: "React", tier: "primary" },
@@ -135,6 +135,24 @@ export const portfolioProfile: PortfolioProfile = {
   testimonials: [
     {
       quote:
+        "I worked with Hamza on SmythOS projects and the guy just delivers. Clean code, solid logic, and you almost never have to go back and fix something he built which in AI agent development is honestly a big deal. He covers a lot of ground and does it well across the board. But what I appreciate most is that he actually cares about the quality of what he ships, not just getting it done. Would work with him again without hesitation.",
+      name: "Leonardo Raul Velasco Parihuana",
+      role: "AI Agent Developer & QA Specialist",
+    },
+    {
+      quote:
+        "I had the pleasure of working alongside Hamza on the same team, and I can confidently say he is a strong and thoughtful engineer. He approaches problems with clarity and isn't afraid to dive into new challenges, quickly getting up to speed and contributing meaningful solutions. Hamza has a solid foundation as a critical thinker and problem solver. He asks the right questions, analyzes situations carefully, and brings a practical mindset to his work. His ability to break down complex problems and tackle them methodically makes him a valuable team member. I would gladly recommend Hamza to any team looking for a capable and dependable engineer.",
+      name: "Ahmed Essam",
+      role: "Software Engineer",
+    },
+    {
+      quote:
+        "Hamza is a talented Fullstack Engineer on my team. He brings strong technical expertise across both frontend and backend, combined with excellent problem-solving skills. Hamza is not only effective at tackling complex challenges, but also at proposing pragmatic solutions within his scope. As a team player, he collaborates seamlessly, communicates clearly, and consistently contributes to a positive and productive engineering culture. A reliable and impactful engineer, I'm glad to have him on my team.",
+      name: "Alaa-eddine KADDOURI",
+      role: "VP of Engineering",
+    },
+    {
+      quote:
         "I had the pleasure of working with Hamza and his dedication to excellence is truly admirable. His front-end expertise is exceptional, and his ability to collaborate across teams has been invaluable. He is positive, supportive, and consistently goes above and beyond for the team.",
       name: "Muhammad Ahmer Hussain",
       role: "Senior SQA",
@@ -220,9 +238,9 @@ export const portfolioProfile: PortfolioProfile = {
       tech: ["Vanilla JavaScript", "Next.js", "TypeScript", "Node.js", "Zustand", "AI Agents", "Security"],
     },
     {
-      title: "SNAD (IOMechs)",
+      title: "AZM (IOMechs)",
       description:
-        "Contributed to SNAD's retail IMS/POS platform with a focus on responsive, production-ready interfaces.",
+        "Contributed to AZM's retail IMS/POS platform with a focus on responsive, production-ready interfaces.",
       business_problem:
         "Retail teams needed a unified IMS/POS experience that reduced day-to-day operational overhead.",
       solution:
