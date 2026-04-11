@@ -1,5 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
+
 import { PlusIcon } from "@/components/portfolio/icons";
+import { trackEvent } from "@/lib/analytics";
 
 export function ContactCTA({
   label,
@@ -14,6 +17,14 @@ export function ContactCTA({
   imageAlt: string;
   pitch: string;
 }) {
+  const handleClick = () => {
+    trackEvent("contact_initiate", {
+      action: "meeting_booking",
+      label: label,
+      href: href,
+    });
+  };
+
   return (
     <section id="contact" className="mt-20">
       <div className="rounded-md border border-dashed border-black/20 py-8 dark:border-border/70 dark:bg-card/45">
@@ -24,6 +35,7 @@ export function ContactCTA({
               href={href}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleClick}
               className="tag-inner-shadow group inline-flex cursor-pointer items-center self-end rounded-md border border-dashed border-black/20 bg-black/[0.04] px-2 py-1 text-sm text-foreground shadow-[0_0_5px_rgba(0,0,0,0.1)] transition-all hover:border-black/30 dark:border-border/85 dark:bg-accent/45 dark:shadow-[0_0_5px_rgba(255,255,255,0.08)]"
             >
               <div className="relative z-20 flex items-center gap-2 transition-all duration-300 group-hover:gap-8">

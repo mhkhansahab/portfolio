@@ -1,4 +1,7 @@
+"use client";
+
 import type { PortfolioProfile } from "@/types/portfolio";
+import { trackEvent } from "@/lib/analytics";
 
 export function TestimonialsSection({
   testimonials,
@@ -11,6 +14,19 @@ export function TestimonialsSection({
     ? `${linkedinHref}details/recommendations/`
     : `${linkedinHref}/details/recommendations/`;
 
+  const handleLinkedInClick = () => {
+    trackEvent("linkedin_recommendations_click", {
+      href: recommendationsHref,
+    });
+  };
+
+  const handleTestimonialView = (name: string, role: string) => {
+    trackEvent("testimonial_view", {
+      author_name: name,
+      author_role: role,
+    });
+  };
+
   return (
     <section id="proof" className="mt-20">
       <p className="text-sleek-secondary text-lg">Recommendations</p>
@@ -22,6 +38,7 @@ export function TestimonialsSection({
           href={recommendationsHref}
           target="_blank"
           rel="noreferrer"
+          onClick={handleLinkedInClick}
           className="text-sm text-sleek-secondary transition-all duration-300 hover:text-foreground hover:underline hover:decoration-2 hover:underline-offset-4"
         >
           View on LinkedIn
@@ -36,6 +53,7 @@ export function TestimonialsSection({
             href={recommendationsHref}
             target="_blank"
             rel="noreferrer"
+            onClick={handleLinkedInClick}
             className="btn-inner-shadow mt-4 inline-flex items-center rounded-md border border-black/20 bg-white px-3 py-1.5 text-sm font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90 dark:border-white/20 dark:bg-black dark:text-white"
           >
             View LinkedIn Recommendations
@@ -47,8 +65,9 @@ export function TestimonialsSection({
             <article
               key={`${item.name}-${item.role}`}
               className="rounded-md border border-dashed border-black/20 bg-black/[0.035] p-4 dark:border-border/70 dark:bg-card/70"
+              onMouseEnter={() => handleTestimonialView(item.name, item.role)}
             >
-              <p className="text-sleek-secondary text-sm">“{item.quote}”</p>
+              <p className="text-sleek-secondary text-sm">&ldquo;{item.quote}&rdquo;</p>
               <p className="mt-3 text-sm font-semibold text-foreground">{item.name}</p>
               <p className="text-sleek-secondary text-xs">{item.role}</p>
             </article>

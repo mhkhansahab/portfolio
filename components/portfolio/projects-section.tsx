@@ -1,12 +1,33 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
+
 import type { ProjectItem } from "@/types/portfolio";
+import { trackEvent } from "@/lib/analytics";
 
 function ProjectCard({ project }: { project: ProjectItem }) {
+  const handleClick = () => {
+    trackEvent("project_click", {
+      project_title: project.title,
+      project_href: project.href,
+      tech_stack: project.tech.join(", "),
+    });
+  };
+
   return (
-    <a href={project.href} target="_blank" rel="noopener noreferrer" className="group block h-full">
+    <a
+      href={project.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={handleClick}
+      className="group block h-full"
+    >
       <article className="flex h-full flex-col rounded-md border border-dashed border-black/20 bg-black/[0.035] p-4 transition-all dark:border-border/70 dark:bg-card/70">
         <div className="overflow-hidden rounded-md">
-          <img src={project.image} alt={project.title} className="h-40 w-full object-cover transition-all duration-300 group-hover:scale-[1.03]" />
+          <img
+            src={project.image}
+            alt={project.title}
+            className="h-40 w-full object-cover transition-all duration-300 group-hover:scale-[1.03]"
+          />
         </div>
         <h3 className="mt-4 text-lg font-semibold text-foreground [font-family:var(--profile-heading-font)] group-hover:text-primary group-hover:underline">
           {project.title}
@@ -23,7 +44,10 @@ function ProjectCard({ project }: { project: ProjectItem }) {
         </p>
         <div className="mt-2 flex flex-wrap items-center gap-2">
           {project.tech.map((tag) => (
-            <span key={tag} className="tag-inner-shadow rounded-md border border-dashed border-black/20 bg-black/[0.04] px-2 py-0.5 text-xs text-foreground dark:border-border/85 dark:bg-accent/45">
+            <span
+              key={tag}
+              className="tag-inner-shadow rounded-md border border-dashed border-black/20 bg-black/[0.04] px-2 py-0.5 text-xs text-foreground dark:border-border/85 dark:bg-accent/45"
+            >
               {tag}
             </span>
           ))}
