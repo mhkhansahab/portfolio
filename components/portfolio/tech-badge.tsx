@@ -34,7 +34,7 @@ export function TechBadge({ item }: { item: TechStackItem }) {
   const handleClick = () => {
     trackEvent("skill_click", {
       skill_name: item.visibleName,
-      tier: item.tier,
+      tier: item.tier as string,
       icon: item.iconName,
     });
   };
